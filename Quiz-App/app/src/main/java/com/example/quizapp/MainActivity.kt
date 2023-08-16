@@ -6,8 +6,8 @@ import android.os.Bundle
 import android.widget.Toast
 import com.example.quizapp.authentication.loginActivity
 import com.example.quizapp.databinding.ActivityMainBinding
+import com.example.quizapp.logic.QuizActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
-import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.auth.FirebaseAuth
 

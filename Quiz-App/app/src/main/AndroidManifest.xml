@@ -10,14 +10,19 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:theme="@style/SignUpTheme"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         tools:targetApi="31">
         <activity
-            android:name=".QuizActivity"
+            android:name=".logic.ResultActivity"
             android:exported="false"
-            android:theme="@style/SignUpTheme"
-            android:parentActivityName=".MainActivity"/>
+            android:theme="@style/SplashTheme"/>
+        <activity
+            android:name=".logic.QuizActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/SignUpTheme" />
         <activity
             android:name=".authentication.ForgotPasswordActivity"
             android:exported="false"
@@ -46,6 +51,10 @@
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/SplashTheme" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
