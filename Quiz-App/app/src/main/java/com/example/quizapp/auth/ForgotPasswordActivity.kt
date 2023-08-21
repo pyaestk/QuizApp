@@ -1,4 +1,4 @@
-package com.example.quizapp.authentication
+package com.example.quizapp.auth
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

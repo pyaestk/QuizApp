@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.animation.AnimationUtils
-import com.example.quizapp.authentication.loginActivity
+import com.example.quizapp.auth.loginActivity
 import com.example.quizapp.databinding.ActivitySplashBinding
 
 

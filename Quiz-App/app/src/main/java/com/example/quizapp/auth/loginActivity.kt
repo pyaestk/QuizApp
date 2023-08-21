@@ -1,4 +1,4 @@
-package com.example.quizapp.authentication
+package com.example.quizapp.auth
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -120,7 +120,7 @@ class loginActivity : AppCompatActivity() {
 
         try {
             val account: GoogleSignInAccount = task.getResult(ApiException::class.java)
-            Toast.makeText(applicationContext, "Welcome to Quiz Game", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(applicationContext, "Welcome to Quiz Game", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
             firebaseGoogleAccount(account)
@@ -150,7 +150,7 @@ class loginActivity : AppCompatActivity() {
         val user = auth.currentUser
 
         if(user != null) {
-            Toast.makeText(applicationContext, "Welcome to Quiz Game", Toast.LENGTH_SHORT).show()
+            //Toast.makeText(applicationContext, "Welcome to Quiz Game", Toast.LENGTH_SHORT).show()
 
             val intent = Intent(this@loginActivity, MainActivity::class.java)
             startActivity(intent)

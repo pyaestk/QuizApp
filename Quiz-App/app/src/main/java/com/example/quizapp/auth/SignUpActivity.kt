@@ -1,4 +1,4 @@
-package com.example.quizapp.authentication
+package com.example.quizapp.auth
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -49,7 +49,7 @@ class SignUpActivity : AppCompatActivity() {
         auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener { task->
             if(task.isSuccessful) {
 
-                Toast.makeText(applicationContext, "Your account has been created", Toast.LENGTH_SHORT).show()
+                //Toast.makeText(applicationContext, "Your account has been created", Toast.LENGTH_SHORT).show()
                 finish()
                 signUpBinding.progressBar.visibility = View.INVISIBLE
                 signUpBinding.buttonSignUp.isClickable = true

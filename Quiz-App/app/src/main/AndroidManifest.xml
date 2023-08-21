@@ -24,17 +24,17 @@
             android:parentActivityName=".MainActivity"
             android:theme="@style/SignUpTheme" />
         <activity
-            android:name=".authentication.ForgotPasswordActivity"
+            android:name=".auth.ForgotPasswordActivity"
             android:exported="false"
-            android:parentActivityName=".authentication.loginActivity"
+            android:parentActivityName=".auth.loginActivity"
             android:theme="@style/SignUpTheme" />
         <activity
-            android:name=".authentication.SignUpActivity"
+            android:name=".auth.SignUpActivity"
             android:exported="false"
-            android:parentActivityName=".authentication.loginActivity"
+            android:parentActivityName=".auth.loginActivity"
             android:theme="@style/SignUpTheme" />
         <activity
-            android:name=".authentication.loginActivity"
+            android:name=".auth.loginActivity"
             android:exported="false"
             android:theme="@style/SplashTheme" />
         <activity
