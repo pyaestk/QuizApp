@@ -1,2 +1,2 @@
 # QuizApp
-trivia app using firebase real time database and authentication
+quiz(trivia) app using firebase real time database and authentication
