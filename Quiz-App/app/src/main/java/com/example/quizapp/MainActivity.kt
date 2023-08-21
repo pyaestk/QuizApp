@@ -18,10 +18,6 @@ import com.google.firebase.database.ValueEventListener
 class MainActivity : AppCompatActivity() {
     lateinit var mainBinding: ActivityMainBinding
 
-    var correctCount = 0
-
-    val database = FirebaseDatabase.getInstance()
-    val databaseRef = database.reference.child("scores")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
@@ -44,26 +40,6 @@ class MainActivity : AppCompatActivity() {
         else {
             mainBinding.textViewEmail.text = "error"
         }
-
-        //displaying current user's last result
-        val userUid = currentUser?.uid ?: ""
-        val userScoreRef = databaseRef.child(userUid)
-
-        val scoreListener = object : ValueEventListener {
-            override fun onDataChange(snapshot: DataSnapshot) {
-                if (snapshot.exists()) {
-                    val correctCount = snapshot.child("correct").getValue(Long::class.java) ?: 0
-                    val result = getString(R.string.last_result_template, correctCount)
-                    mainBinding.textViewLastresult.text = result
-                }
-            }
-
-            override fun onCancelled(error: DatabaseError) {
-                // Handle the error here
-            }
-        }
-
-        userScoreRef.addValueEventListener(scoreListener)
 
         mainBinding.startQuiz.setOnClickListener {
             val intent = Intent(this, QuizActivity::class.java)

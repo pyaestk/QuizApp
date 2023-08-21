@@ -27,9 +27,11 @@
         android:layout_marginTop="36dp"
         android:elevation="5dp"
         android:text="Let's Play Quizzes"
+        android:textAllCaps="false"
         android:textColor="@color/purpleVariant"
         android:textSize="34sp"
         android:textStyle="bold|italic"
+        android:typeface="normal"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,7 +53,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/login_signin_button_shape"
-        android:elevation="10dp"
+        android:elevation="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -77,17 +79,17 @@
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/textViewLastresult"
+            app:layout_constraintBottom_toTopOf="@+id/textViewDescription"
             app:layout_constraintStart_toEndOf="@+id/imageView10"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.5" />
 
         <TextView
-            android:id="@+id/textViewLastresult"
+            android:id="@+id/textViewDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="@string/last_result_template"
+            android:text="Level : Intermediate"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/textView8"
