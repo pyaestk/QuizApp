@@ -11,7 +11,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
-import com.example.quizapp.data.Quizzes
+import com.example.quizapp.model.Quizzes
 import com.example.quizapp.R
 import com.example.quizapp.databinding.ActivityQuizBinding
 import com.google.firebase.auth.FirebaseAuth
